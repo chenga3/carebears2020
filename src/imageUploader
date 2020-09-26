@@ -1,0 +1,17 @@
+<script>
+    function display(buttonID) {
+        var file = document.getElementById(buttonID).files[0];
+        var reader  = new FileReader();
+        reader.onload = function(e)  {
+            var image = document.createElement("img");
+            image.src = e.target.result;
+            document.body.appendChild(image);
+         }
+         reader.readAsDataURL(file);
+     }
+</script>
+<body>
+      <input type=file name=filename id=file >
+      <p></p>
+     <button type=button onclick='display("file")'>Confirm</button></br>
+</body>
