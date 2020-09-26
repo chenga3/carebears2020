@@ -83,3 +83,56 @@ html, body {
 .chat-bar form input:focus {
   border: 1px solid #f19e38;
 }
+
+.submitoption {
+  border-radius: 16px;
+  margin: 2px;
+}
+
+/* COPY FROM HERE DOWN */
+
+#sendimage {
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Signika", sans-serif;
+  background-color: #7aff9f;
+}
+
+#fillform {
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Signika", sans-serif;
+  background-color: #faf370;
+}
+
+.formheader {
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.modal {
+  background-color: #5cc4bd;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Signika", sans-serif;
+  color: #464a47;
+}
+
+#formsubmit {
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+textarea {
+  width: 100%;
+}

@@ -74,56 +74,66 @@ class PatientForm extends React.Component {
 
     this.setState({[name]: value});
   }
-
+  
+  /* REPLACE THIS FUNCTION ONLY */
   render() {
     const { showDischargeOptions } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
-        <h1> Patient Form </h1>
-        <span>Is there any discharge:</span>
-        <input type="radio" id="discharge-yes" name="discharge" value="yes"
+        <h1 className="formheader"> Patient Form </h1>
+        <table>
+        <tr>
+        <td><span>Is there any discharge:</span></td>
+        <td><input type="radio" id="discharge-yes" name="discharge" value="yes"
           onChange={(event) => {
             this.setState({ showDischargeOptions: true });
             this.handleInputChange(event);
-          }}/> Yes
-        <input type="radio" id="discharge-no" name="discharge" value="no"
+          }}/> Yes </td>
+        <td><input type="radio" id="discharge-no" name="discharge" value="no"
           onChange={(event) => {
             this.setState({ showDischargeOptions: false });
             this.handleInputChange(event);
-          }}/> No
-        <br/>
+          }}/> No </td>
+        </tr>
         { showDischargeOptions ?
           <div className="discharge-options">
-            <span>Discharge colour:</span>
-            <input type="radio" name="dischargeColour" value="yellow"
-              onChange={this.handleInputChange}/> Yellow
-            <input type="radio" name="dischargeColour" value="green"
-              onChange={this.handleInputChange}/> Green
-            <br/>
-            <span>Does discharge have smelly odour:</span>
-            <input type="radio" id="discharge-odour" name="dischargeOdour" value="yes"
-              onChange={this.handleInputChange}/> Yes
-            <input type="radio" id="discharge-odour" name="dischargeOdour" value="no"
-              onChange={this.handleInputChange}/> No
-            <br/>
+            <table>
+            <tr>
+            <td><span>Discharge colour:</span></td>
+            <td><input type="radio" name="dischargeColour" value="yellow"
+              onChange={this.handleInputChange}/> Yellow </td>
+            <td><input type="radio" name="dischargeColour" value="green"
+              onChange={this.handleInputChange}/> Green </td>
+            </tr>
+            <tr>
+            <td><span>Does discharge have smelly odour:</span></td>
+            <td><input type="radio" id="discharge-odour" name="dischargeOdour" value="yes"
+              onChange={this.handleInputChange}/> Yes </td>
+            <td><input type="radio" id="discharge-odour" name="dischargeOdour" value="no"
+              onChange={this.handleInputChange}/> No </td>
+            </tr>
+            </table>
           </div> : null
         }
-        <span>Is there increasing pain:</span>
-        <input type="radio" id="pain" name="increasingPain" value="yes"
-          onChange={this.handleInputChange}/> Yes
-        <input type="radio" id="pain" name="increasingPain" value="no"
-          onChange={this.handleInputChange}/> No
-        <br/>
-        <span>Do you feel ill or have a fever:</span>
-        <input type="radio" id="ill" name="ill" value="yes"
-          onChange={this.handleInputChange}/> Yes
-        <input type="radio" id="ill" name="ill" value="no"
-          onChange={this.handleInputChange}/> No
-        <br/>
+        <tr>
+        <td><span>Is there increasing pain:</span></td>
+        <td><input type="radio" id="pain" name="increasingPain" value="yes"
+          onChange={this.handleInputChange}/> Yes </td>
+        <td><input type="radio" id="pain" name="increasingPain" value="no"
+          onChange={this.handleInputChange}/> No </td>
+        </tr>
+        <tr>
+        <td><span>Do you feel ill or have a fever:</span></td>
+        <td><input type="radio" id="ill" name="ill" value="yes"
+          onChange={this.handleInputChange}/> Yes</td>
+        <td><input type="radio" id="ill" name="ill" value="no"
+          onChange={this.handleInputChange}/> No </td>
+        </tr>
+        </table>
         <span>Extra comments:</span><br/>
         <textarea name="extraComments"
           onChange={this.handleInputChange}></textarea><br/>
-        <input type="submit" value="Submit"/>
+        <input type="submit" value="Submit" id="formsubmit"/>
       </form>
     );
   }
@@ -221,19 +231,8 @@ function App() {
           </div>
         ))}
       </div>
-      <div className="chat-bar">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="message"
-            placeholder="Type your message here"
-            onChange={handleChange}
-            value={messageBody}
-          />
-        </form>
-      </div>
       <div className="submitoptions">
-        <Popup trigger={<button> Fill Form </button>} modal nested>
+        <Popup trigger={<button className="submitoption" id="fillform"> Fill Form </button>} modal nested>
           { close => (
             <div className="modal">
               <button className="close" onClick={close}> &times; </button>
@@ -241,8 +240,7 @@ function App() {
             </div>
           )}
         </Popup>
-        <input type="file" id="file"/>
-        <button onClick={uploadImage}>Send Image</button>
+        <button onClick={uploadImage} className="submitoption" id="sendimage">Send Image</button>
       </div>
     </div>
   );
