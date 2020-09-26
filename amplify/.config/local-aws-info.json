@@ -3,5 +3,10 @@
         "configLevel": "project",
         "useProfile": true,
         "profileName": "lex-lab-amplify-profile"
+    },
+    "ui": {
+        "configLevel": "project",
+        "useProfile": true,
+        "profileName": "lex-lab-amplify-profile"
     }
 }

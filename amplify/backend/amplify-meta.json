@@ -1,15 +1,42 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapp-dev-90454-authRole",
-      "UnauthRoleArn": "arn:aws:iam::165483032974:role/amplify-amplifyapp-dev-90454-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::165483032974:role/amplify-amplifyapp-dev-90454-authRole",
+      "AuthRoleName": "amplify-amplifyapp-ui-95823-authRole",
+      "UnauthRoleArn": "arn:aws:iam::165483032974:role/amplify-amplifyapp-ui-95823-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::165483032974:role/amplify-amplifyapp-ui-95823-authRole",
       "Region": "ap-southeast-2",
-      "DeploymentBucketName": "amplify-amplifyapp-dev-90454-deployment",
-      "UnauthRoleName": "amplify-amplifyapp-dev-90454-unauthRole",
-      "StackName": "amplify-amplifyapp-dev-90454",
-      "StackId": "arn:aws:cloudformation:ap-southeast-2:165483032974:stack/amplify-amplifyapp-dev-90454/4a99fd70-ff94-11ea-8e79-0290edc7a226",
+      "DeploymentBucketName": "amplify-amplifyapp-ui-95823-deployment",
+      "UnauthRoleName": "amplify-amplifyapp-ui-95823-unauthRole",
+      "StackName": "amplify-amplifyapp-ui-95823",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:165483032974:stack/amplify-amplifyapp-ui-95823/c3478740-ff9b-11ea-ac4b-0af90783193e",
       "AmplifyAppId": "d2mn4ou09ds8o2"
+    }
+  },
+  "api": {
+    "myapi": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "2knapaymhjdiratvlhtahqglme",
+        "GraphQLAPIEndpointOutput": "https://v4hvetjvbvbxdb6asfqxf5axka.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-fcj3ztajlrch5lzoxrlirgxt7a"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-ui-95823-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apimyapi"
+      },
+      "lastPushTimeStamp": "2020-09-26T02:05:02.689Z",
+      "lastPushDirHash": "2TUjjt/F1piQhTdxmBdJbLDOldc="
     }
   }
 }
