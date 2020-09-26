@@ -7,21 +7,62 @@ html, body {
 }
 
 #root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline;
   background: #f8f8f8;
   height: 100%;
+  justify-content: center;
+}
+
+.leftMenu {
+  float: left;
+  width:20%;
+	height:100%;
+  padding: 4px;
+	background-color:#FFEFDF;
+}
+
+.leftMenu button {
+	border: none;
+  background-color: #FFEFDF;
+}
+
+.rightMenu {
+  float: right;
+  width: 30%;
+  height: 800px;
+  background-color: #FFEFDF;
+  padding: 30px;
+}
+
+.profilePicture {
+  width: 100px;
+  height: 100px;
+}
+
+.profilePicture img {
+  height: 100%;
+  width: 100%;
+}
+
+.patient {
+  display: flex;
+  position: relative;
+}
+
+.profileInfo {
+
 }
 
 .container {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   width: 540px;
   height: 680px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0);
+  width:50%;
+	background-color:#fff;
 }
 
 .messages {
@@ -60,7 +101,7 @@ html, body {
 }
 
 .chat-bar {
-  height: 64px;
+  height: 40px;
   border-top: 1px solid #ddd;
 }
 
@@ -80,4 +121,100 @@ html, body {
 
 .chat-bar form input:focus {
   border: 1px solid #f19e38;
+}
+
+.responseOptions {
+  margin: 0;
+}
+
+.responseOptions form {
+  width: 55%;
+  margin: 0;
+}
+
+.responseOptions form input {
+  padding: 30px;
+  margin: 4px;
+}
+
+.textBar {
+  margin: 0;
+}
+
+.textBar form {
+  margin: 0;
+}
+
+/* Text styles */
+/* h1 - This includes the main page header */
+h1 {
+	font-family: "Signika", sans-serif;
+	font-size: 32px;
+	color:#FDFBFD;
+}
+
+/* h2 - This includes people's names in the left sidebar */
+h2 {
+	font-family:"Signika", sans-serif;
+	font-size:28px;
+	color:#7F7979;
+}
+
+h3 {
+	font-family: "Signika", sans-serif;
+	font-size:20px;
+	color:#7F7979;
+}
+
+#header {
+	width:100%;
+	height:80px;
+	position:relative;
+	float:left;
+	text-align:center;
+	background-color:#34D1BF;
+}
+
+#chatTitle {
+	width:100%;
+	height:50px;
+	padding:15px;
+	text-align:center;
+  font-family:"Signika", sans-serif;
+	font-size:20px;
+	color:#7F7979;
+}
+
+#OK {
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Signika", sans-serif;
+  background-color: #7aff9f;
+}
+
+#inPerson {
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Signika", sans-serif;
+  background-color: #faf370;
+}
+
+#checkAgain {
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-family: "Signika", sans-serif;
+  background-color: #7eeefc;
+}
+
+.profileInfo {
+  font-family: "Signika", sans-serif;
+  color: #3f3c3c;
+  font-size: 20px;
+}
+
+.profileHeading {
+  font-weight: bold;
 }

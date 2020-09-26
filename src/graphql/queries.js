@@ -32,6 +32,72 @@ export const listMessages = /* GraphQL */ `
     }
   }
 `;
+export const getDoctor = /* GraphQL */ `
+  query GetDoctor($id: ID!) {
+    getDoctor(id: $id) {
+      id
+      title
+      fullName
+      specialty
+      clinic
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listDoctors = /* GraphQL */ `
+  query ListDoctors(
+    $filter: ModelDoctorFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listDoctors(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        title
+        fullName
+        specialty
+        clinic
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const getPatient = /* GraphQL */ `
+  query GetPatient($id: ID!) {
+    getPatient(id: $id) {
+      id
+      fullName
+      operation
+      surgeryAt
+      clinic
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listPatients = /* GraphQL */ `
+  query ListPatients(
+    $filter: ModelPatientFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listPatients(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        fullName
+        operation
+        surgeryAt
+        clinic
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
 export const messagesByChannelId = /* GraphQL */ `
   query MessagesByChannelId(
     $channelID: ID

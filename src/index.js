@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Amplify from '@aws-amplify/core';
 import awsExports from './aws-exports';
-
 Amplify.configure(awsExports);
 
 ReactDOM.render(

@@ -8,3 +8,19 @@ type Message
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
 }
+
+type Doctor @model {
+  id: ID!
+  title: String!
+  fullName: String!
+  specialty: String!
+  clinic: String!
+}
+
+type Patient @model {
+  id: ID!
+  fullName: String!
+  operation: String!
+  surgeryAt: String!
+  clinic: String!
+}

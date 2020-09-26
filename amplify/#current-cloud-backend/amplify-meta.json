@@ -1,19 +1,19 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapp-dev-90454-authRole",
-      "UnauthRoleArn": "arn:aws:iam::165483032974:role/amplify-amplifyapp-dev-90454-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::165483032974:role/amplify-amplifyapp-dev-90454-authRole",
-      "Region": "ap-southeast-2",
-      "DeploymentBucketName": "amplify-amplifyapp-dev-90454-deployment",
-      "UnauthRoleName": "amplify-amplifyapp-dev-90454-unauthRole",
-      "StackName": "amplify-amplifyapp-dev-90454",
-      "StackId": "arn:aws:cloudformation:ap-southeast-2:165483032974:stack/amplify-amplifyapp-dev-90454/4a99fd70-ff94-11ea-8e79-0290edc7a226",
-      "AmplifyAppId": "d2mn4ou09ds8o2"
+      "AuthRoleName": "amplify-amplifiedchatapp2-dev-104518-authRole",
+      "UnauthRoleArn": "arn:aws:iam::330522199935:role/amplify-amplifiedchatapp2-dev-104518-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::330522199935:role/amplify-amplifiedchatapp2-dev-104518-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-amplifiedchatapp2-dev-104518-deployment",
+      "UnauthRoleName": "amplify-amplifiedchatapp2-dev-104518-unauthRole",
+      "StackName": "amplify-amplifiedchatapp2-dev-104518",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:330522199935:stack/amplify-amplifiedchatapp2-dev-104518/51d882b0-ffa2-11ea-bdd8-06f1487f6a64",
+      "AmplifyAppId": "d2zr7ltcdfaft7"
     }
   },
   "api": {
-    "myapi": {
+    "amplifiedchatapp2": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -22,21 +22,21 @@
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
               "apiKeyExpirationDays": 7,
-              "description": "demo"
+              "description": ""
             }
           },
           "additionalAuthenticationProviders": []
         },
-        "GraphQLAPIIdOutput": "k6lxmq47qzcl7fzhn63gjeoqom",
-        "GraphQLAPIEndpointOutput": "https://j7mgd5dcybhnbjabijw7q5io6y.appsync-api.ap-southeast-2.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-ocf7z5r5j5eubbadqow7yna6hy"
+        "GraphQLAPIIdOutput": "5ax4og3adnf7fhbrjmhevlhhc4",
+        "GraphQLAPIEndpointOutput": "https://dl7u4oquxbe7nkjkldbe3usnl4.appsync-api.ap-southeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-u2w3zdjbszfchgypo33evfmpxy"
       },
-      "lastPushTimeStamp": "2020-09-26T03:10:16.298Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-90454-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-        "logicalId": "apimyapi"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifiedchatapp2-dev-104518-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiamplifiedchatapp2"
       },
-      "lastPushDirHash": "GI1oOG07kpokE3bspzFUovrxL8Q="
+      "lastPushTimeStamp": "2020-09-26T13:59:18.224Z",
+      "lastPushDirHash": "99OY+p50+DAYB0Az1cC0yyEWzPs="
     }
   }
 }
