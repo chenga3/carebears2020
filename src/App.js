@@ -122,7 +122,6 @@ function App() {
           ))}
         </div>
       </div>
-      <div className="chat-bar">
           <div className="responseOptions">
           <form onSubmit={handleSubmit}>
             <input
@@ -145,6 +144,7 @@ function App() {
               id="checkAgain"/>
           </form>
           </div>
+        <div className="chat-bar">
           <div className="textBar">
           <form onSubmit={handleSubmit}>
             <input

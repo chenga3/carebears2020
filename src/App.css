@@ -57,7 +57,7 @@ html, body {
   display: inline-flex;
   flex-direction: column;
   width: 540px;
-  height: 680px;
+  height: 750px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0);
@@ -101,7 +101,10 @@ html, body {
 }
 
 .chat-bar {
-  height: 40px;
+  height: 64px;
+}
+
+.responseOptions {
   border-top: 1px solid #ddd;
 }
 
@@ -123,26 +126,9 @@ html, body {
   border: 1px solid #f19e38;
 }
 
-.responseOptions {
-  margin: 0;
-}
-
-.responseOptions form {
-  width: 55%;
-  margin: 0;
-}
-
 .responseOptions form input {
-  padding: 30px;
-  margin: 4px;
-}
-
-.textBar {
-  margin: 0;
-}
-
-.textBar form {
-  margin: 0;
+  border-radius: 16px;
+  margin: 2px;
 }
 
 /* Text styles */
