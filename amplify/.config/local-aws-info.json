@@ -8,5 +8,10 @@
         "configLevel": "project",
         "useProfile": true,
         "profileName": "lex-lab-amplify-profile"
+    },
+    "chat": {
+        "configLevel": "project",
+        "useProfile": true,
+        "profileName": "lex-lab-amplify-profile"
     }
 }
