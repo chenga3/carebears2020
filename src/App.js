@@ -241,8 +241,10 @@ function App() {
     </div>
     <div id="chatTitle">
       <span>Doctor Dave</span> <span>- </span>
-      <span id="patientName">Patient Name</span> <span>-</span> <span>Date of Surgery: </span>
-      <span id="patientOp">--/--/--</span>
+      {patient === true ? <span id="patientName">Hannah Green</span> : <span id="patientName">Patient Name</span>}
+      <span> - </span>
+      <span>Date of Surgery: </span>
+      {patient === true ? <span id="patientOp">2020-08-30</span> : <span id="patientOp">--/--/--</span>}
     </div>
       <div className="messages">
         <div className="messages-scroller">
@@ -311,22 +313,22 @@ function App() {
     <div className="profileInfo">
     <div> <p className="profileHeading">Patient name:</p>
     <div id="profileName">
-      <p></p>
+      {patient === true ? <p>Hannah Green</p> : <p></p>}
     </div>
     </div>
     <div> <p className="profileHeading">Operation:</p>
     <div id="profileOperation">
-      <p></p>
+      {patient === true ? <p>Carotid endarterectomy</p> : <p></p>}
     </div>
     </div>
     <div> <p className="profileHeading">Date of surgery:</p>
     <div id="profileSurgery">
-      <p></p>
+      {patient === true ? <p>2020-08-30</p> : <p></p>}
     </div>
     </div>
     <div> <p className="profileHeading">Location of operation:</p>
     <div id="profileClinic">
-      <p></p>
+      {patient === true ? <p>Grey-Sloan Memorial Hospital</p> : <p></p>}
     </div>
     </div>
     <div> <p className="profileHeading">Notes:</p>
