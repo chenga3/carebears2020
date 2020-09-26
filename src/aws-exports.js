@@ -3,10 +3,17 @@
 
 const awsmobile = {
     "aws_project_region": "ap-southeast-2",
-    "aws_appsync_graphqlEndpoint": "https://v4hvetjvbvbxdb6asfqxf5axka.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+    "aws_appsync_graphqlEndpoint": "https://j7mgd5dcybhnbjabijw7q5io6y.appsync-api.ap-southeast-2.amazonaws.com/graphql",
     "aws_appsync_region": "ap-southeast-2",
     "aws_appsync_authenticationType": "API_KEY",
-    "aws_appsync_apiKey": "da2-fcj3ztajlrch5lzoxrlirgxt7a"
+    "aws_appsync_apiKey": "da2-ocf7z5r5j5eubbadqow7yna6hy",
+    "aws_cognito_identity_pool_id": "ap-southeast-2:584c9ced-a019-49bc-beaa-78097117b107",
+    "aws_cognito_region": "ap-southeast-2",
+    "aws_user_pools_id": "ap-southeast-2_m4rLsrOjz",
+    "aws_user_pools_web_client_id": "6ko41okf4p20h30pap274qf6i0",
+    "oauth": {},
+    "aws_user_files_s3_bucket": "amplify-app90454-dev",
+    "aws_user_files_s3_bucket_region": "ap-southeast-2"
 };
 
 

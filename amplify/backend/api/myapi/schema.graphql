@@ -5,6 +5,7 @@ type Message
   channelID: ID!
   author: String!
   body: String!
+  image: String
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
 }

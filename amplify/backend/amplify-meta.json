@@ -31,11 +31,51 @@
         "GraphQLAPIEndpointOutput": "https://j7mgd5dcybhnbjabijw7q5io6y.appsync-api.ap-southeast-2.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-ocf7z5r5j5eubbadqow7yna6hy"
       },
-      "lastPushTimeStamp": "2020-09-26T07:17:11.990Z",
+      "lastPushTimeStamp": "2020-09-26T13:42:38.759Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-90454-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apimyapi"
-      }
+      },
+      "lastPushDirHash": "b0hCdSo7Aybx1V6+jWzY8X/pHU8="
+    }
+  },
+  "auth": {
+    "amplifyapp80bad4bc": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-90454-deployment/amplify-cfn-templates/auth/amplifyapp80bad4bc-cloudformation-template.yml",
+        "logicalId": "authamplifyapp80bad4bc"
+      },
+      "lastPushTimeStamp": "2020-09-26T13:42:38.763Z",
+      "output": {
+        "AppClientSecret": "1ddce1m1ijr9l7gtltq7pfp2pf0q06ssjch1q1tnbia75ld2iqc7",
+        "UserPoolId": "ap-southeast-2_m4rLsrOjz",
+        "AppClientIDWeb": "6ko41okf4p20h30pap274qf6i0",
+        "AppClientID": "3e447rsjhgnlrvn20mppu3vuom",
+        "IdentityPoolId": "ap-southeast-2:584c9ced-a019-49bc-beaa-78097117b107",
+        "IdentityPoolName": "amplifyapp80bad4bc_identitypool_80bad4bc__dev",
+        "UserPoolName": "amplifyapp80bad4bc_userpool_80bad4bc"
+      },
+      "lastPushDirHash": "A0OJS2D/x8jmw4Fvk9CMFfzCeCk="
+    }
+  },
+  "storage": {
+    "amplifyapps3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyapp-dev-90454-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageamplifyapps3"
+      },
+      "lastPushTimeStamp": "2020-09-26T13:42:38.768Z",
+      "output": {
+        "BucketName": "amplify-app90454-dev",
+        "Region": "ap-southeast-2"
+      },
+      "lastPushDirHash": "POV05RL0We0k4oOtLWdBsOog6SY="
     }
   }
 }

@@ -11,6 +11,7 @@ export const createMessage = /* GraphQL */ `
       channelID
       author
       body
+      image
       createdAt
       updatedAt
     }
@@ -26,6 +27,7 @@ export const updateMessage = /* GraphQL */ `
       channelID
       author
       body
+      image
       createdAt
       updatedAt
     }
@@ -41,6 +43,7 @@ export const deleteMessage = /* GraphQL */ `
       channelID
       author
       body
+      image
       createdAt
       updatedAt
     }

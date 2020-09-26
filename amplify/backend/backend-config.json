@@ -16,5 +16,19 @@
         }
       }
     }
+  },
+  "auth": {
+    "amplifyapp80bad4bc": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "amplifyapps3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
